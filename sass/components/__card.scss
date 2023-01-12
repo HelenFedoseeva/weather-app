@@ -1,0 +1,34 @@
+.root__card {
+    min-height: 200px;
+    background: rgb(9, 9, 121);
+        background: linear-gradient(297deg, rgba(9, 9, 121, 1) 23%, rgba(6, 75, 164, 1) 57%, rgba(0, 212, 255, 1) 100%);
+    width: 170px;
+    padding: 15px;
+
+    border-radius: 7px;
+    color: aliceblue;
+
+}
+
+.root__card-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.root__card-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.root__card-img {
+    height: 70px;
+}
+
+
+.root__card-temp{
+    font-size: 20px;
+}
+
+.root__card-description {
+    font-style: italic;
+}
