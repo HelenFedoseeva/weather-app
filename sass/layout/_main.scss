@@ -1,0 +1,18 @@
+.main__label{
+    display: flex;
+    flex-direction: column;
+}
+.main__label-text{
+    font-size: 15px;
+}
+
+
+.main__label-input {
+    border: 1px solid;
+    border-radius: 4px;
+    padding-left: 5px;
+    min-height: 20px;
+    width: 50%;
+    min-width: 100px;
+}
+

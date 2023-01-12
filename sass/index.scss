@@ -1,6 +1,7 @@
-@import 'node_modules/modern-normalize/modern-normalize.css';
+// @import 'node_modules/modern-normalize/modern-normalize.css';
 @import './common';
 
 @import './base/container';
 
-@import './layout/header'
+@import './layout/header';
+@import './layout/main';
