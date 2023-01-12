@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+ul,
+ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Roboto;
+    color: var(--basic-color);
+    background-color: #fff;
+    margin: 0 auto;
+
+}
+
+.button {
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.header{
+    background-color: #f1f8ff;
+    padding-top: 10px;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+    text-decoration: underline;
+    color: #b778b4;
+}
+.logo__icon{
+   fill: #f270ee;
+}
+@media screen and (max-width: 779px) {
+    .header__nav{
+        display: none;
+    }
+
+    .menu-burger__icon{
+        fill: #000;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 780px){
+    .menu-burger__icon{
+        display: none;
+    }
+}
+
