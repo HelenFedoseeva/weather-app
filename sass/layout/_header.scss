@@ -1,5 +1,5 @@
 .header{
-    background-color: #f1f8ff;
+    background-color: #363636;
     padding-top: 10px;
 }
 
@@ -12,10 +12,10 @@
 .header__logo{
     display: flex;
     text-decoration: underline;
-    color: #b778b4;
+    color: #c651cd;
 }
 .logo__icon{
-   fill: #f270ee;
+   fill: #c651cd;
 }
 @media screen and (max-width: 779px) {
     .header__nav{
