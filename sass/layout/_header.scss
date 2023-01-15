@@ -23,7 +23,7 @@
     }
 
     .menu-burger__icon{
-        fill: #000;
+        fill: #c651cd;
         cursor: pointer;
     }
 }
@@ -31,6 +31,24 @@
 @media screen and (min-width: 780px){
     .menu-burger__icon{
         display: none;
+    }
+
+    .header__nav-list{
+        display: flex;
+        gap: 8px;
+    
+    }
+
+    .header__nav-item{
+        cursor: pointer;
+    }
+
+    .list__icon{
+        fill: #c651cd;
+
+        &:hover{
+            fill: #e38ce8;
+        }
     }
 }
 
