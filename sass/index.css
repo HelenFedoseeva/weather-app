@@ -91,10 +91,17 @@ body {
   display: flex;
   text-decoration: underline;
   color: #c651cd;
+  cursor: pointer;
+}
+.header__logo:hover {
+  color: #e38ce8;
 }
 
 .logo__icon {
   fill: #c651cd;
+}
+.logo__icon:hover {
+  fill: #e38ce8;
 }
 
 @media screen and (max-width: 779px) {

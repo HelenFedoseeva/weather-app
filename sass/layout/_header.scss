@@ -13,9 +13,19 @@
     display: flex;
     text-decoration: underline;
     color: #c651cd;
+
+    cursor: pointer;
+
+    &:hover{
+        color: #e38ce8;
+    }
 }
 .logo__icon{
    fill: #c651cd;
+
+   &:hover{
+    fill: #e38ce8;
+   }
 }
 @media screen and (max-width: 779px) {
     .header__nav{
