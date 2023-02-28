@@ -5,5 +5,5 @@ burgerMenuRef.addEventListener("click", onBurgerClickHandler);
 function onBurgerClickHandler(e) {
   e.preventDefault();
 
-  console.log("burger click");
+  document.getElementById("mobile-menu").classList.toggle("hidden");
 }
