@@ -85,6 +85,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -111,11 +112,21 @@ body {
   .menu-burger__icon {
     fill: #c651cd;
     cursor: pointer;
+    transition: fill 250ms ease-in;
+  }
+  .menu-burger__icon:hover, .menu-burger__icon:focus {
+    fill: #8b388f;
+  }
+  .header__nav-wrapper {
+    display: none;
   }
 }
 @media screen and (min-width: 780px) {
   .menu-burger__icon {
     display: none;
+  }
+  .header__nav-wrapper {
+    display: block;
   }
   .header__nav-list {
     display: flex;
@@ -206,4 +217,10 @@ body {
 
 .footer {
   background-color: #363636;
+  min-height: 30px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=index.css.map */

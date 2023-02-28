@@ -44,7 +44,6 @@ const Ktransform = (kelvin) => {
 
 fetchWeather("miami")
   .then((data) => {
-    console.log(data);
     renderCard(data);
   })
   .catch((error) => console.log(error));

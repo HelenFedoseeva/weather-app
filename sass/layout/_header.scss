@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo{
@@ -35,12 +36,27 @@
     .menu-burger__icon{
         fill: #c651cd;
         cursor: pointer;
+
+        transition: fill 250ms ease-in;
+
+        &:hover,
+        &:focus{
+            fill: #8b388f;
+        }
+    }
+
+    .header__nav-wrapper{
+        display: none;
     }
 }
 
 @media screen and (min-width: 780px){
     .menu-burger__icon{
         display: none;
+    }
+
+    .header__nav-wrapper{
+        display: block;
     }
 
     .header__nav-list{
