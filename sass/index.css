@@ -37,6 +37,7 @@ body {
   color: var(--basic-color);
   background-color: #fff;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .button {
@@ -203,6 +204,13 @@ body {
   fill: #e38ce8;
 }
 
+.list__icon {
+  fill: #c651cd;
+}
+.list__icon:hover {
+  fill: #e38ce8;
+}
+
 @media screen and (max-width: 779px) {
   .header__nav {
     display: none;
@@ -232,12 +240,6 @@ body {
   }
   .header__nav-item {
     cursor: pointer;
-  }
-  .list__icon {
-    fill: #c651cd;
-  }
-  .list__icon:hover {
-    fill: #e38ce8;
   }
 }
 .main {

@@ -28,6 +28,14 @@
     fill: #e38ce8;
    }
 }
+
+ .list__icon {
+     fill: #c651cd;
+
+     &:hover {
+         fill: #e38ce8;
+     }
+ }
 @media screen and (max-width: 779px) {
     .header__nav{
         display: none;
@@ -69,12 +77,12 @@
         cursor: pointer;
     }
 
-    .list__icon{
-        fill: #c651cd;
+    // .list__icon{
+    //     fill: #c651cd;
 
-        &:hover{
-            fill: #e38ce8;
-        }
-    }
+    //     &:hover{
+    //         fill: #e38ce8;
+    //     }
+    // }
 }
 
