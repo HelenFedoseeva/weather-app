@@ -6,6 +6,7 @@
   background-color: #e38ce8;
   min-width: 200px;
   min-height: 100%;
+  opacity: 0;
 
  transform: translateX(100%);
  transition:  transform 300ms cubic-bezier(.1, .48, .96, .64);
@@ -13,6 +14,7 @@
 
 .transform{
   transform: translateX(0%);
+  opacity: 1;
 }
 
 .mobile-menu__container {
@@ -113,5 +115,11 @@
     letter-spacing: 10px;
     padding: 5px;
  
+  }
+}
+
+@media screen and (min-width:1200px){
+  .mobile-menu{
+    display: none;
   }
 }
