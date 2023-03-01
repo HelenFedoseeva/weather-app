@@ -1,83 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/index.css" />
     <title>Weather application</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header class="header">
-        <div class="container header__container">
-            <div class="header__logo logo">
-                <div>
-                    <svg  class="logo__icon" width="20" height="20">
-                        <use href="./img/icons-sprite.svg#icon-cloud"></use>
-                    </svg>
-                </div>
-                <p class="header__logo-text">WeaCast</p>
-            </div>
-            <button class="header__menu-burger btn" type="button">
-                <svg class="menu-burger__icon" width="20" height="20">
-                    <use href="./img/icons-sprite.svg#icon-burger"></use>
-                </svg>
-            </button>
-            <div class="header__nav-wrapper">
-                <nav class="header__nav">
-                    <ul class="header__nav-list list">
-                        <li class="header__nav-item">
-                            <svg class="list__icon" width="20" height="20">
-                                <use href="./img/icons-sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </li>
-                        <li class="header__nav-item">
-                            <svg class="list__icon" width="20" height="20">
-                                <use href="./img/icons-sprite.svg#icon-telegram"></use>
-                            </svg>
-                        </li>
-                        <li class="header__nav-item">
-                            <svg class="list__icon" width="20" height="20">
-                                <use href="./img/icons-sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container header__container">
+        <div class="header__logo logo">
+          <div>
+            <svg class="logo__icon" width="20" height="20">
+              <use href="./img/icons-sprite.svg#icon-cloud"></use>
+            </svg>
+          </div>
+          <p class="header__logo-text">WeaCast</p>
         </div>
+        <button class="header__menu-burger btn" type="button">
+          <svg class="menu-burger__icon" width="20" height="20">
+            <use href="./img/icons-sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header__nav-wrapper">
+          <nav class="header__nav">
+            <ul class="header__nav-list list">
+              <li class="header__nav-item">
+                <a href="#">
+                  <svg class="list__icon" width="20" height="20">
+                    <use href="./img/icons-sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#"><svg class="list__icon" width="20" height="20">
+                    <use href="./img/icons-sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">
+                  <svg class="list__icon" width="20" height="20">
+                    <use href="./img/icons-sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="main">
-        <div class="container section">
-            <form class="main-form">
-                <label class="main-form__label">
-                    <span class="main-form__label-text">City</span>
-                    <div>
-                        <input class="main-form__label-input" type="text" placeholder="Enter the city">
-                        <button class="main-form__btn btn" type="submit">Search</button>
-                    </div>
-                </label>
-            </form>
-            <div id="root"></div>
-        </div>
+      <div class="container section">
+        <form class="main-form">
+          <label class="main-form__label">
+            <span class="main-form__label-text">City</span>
+            <div>
+              <input
+                class="main-form__label-input"
+                type="text"
+                placeholder="Enter the city"
+              />
+              <button class="main-form__btn btn" type="submit">Search</button>
+            </div>
+          </label>
+        </form>
+        <div id="root"></div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            <p>I'm footer</p>
-        </div>
+      <div class="container">
+        <ul class="list footer__social-list">
+          <li class="footer__social-item">
+            <a href="#"
+              ><svg class="list__icon" width="20" height="20">
+                <use href="./img/icons-sprite.svg#icon-facebook"></use></svg></a>
+          </li>
+          <li class="footer__social-item">
+            <svg class="list__icon" width="20" height="20">
+              <use href="./img/icons-sprite.svg#icon-telegram"></use>
+            </svg>
+          </li>
+          <li class="footer__social-item">
+            <svg class="list__icon" width="20" height="20">
+              <use href="./img/icons-sprite.svg#icon-instagram"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
     </footer>
     <div id="mobile-menu" class="mobile-menu">
-        <div class="mobile-menu__container">
-            <button id="close-mobile-menu" class="mobile-menu__close-btn btn" type="button"></button>
-            <div class="mobile-menu__content">
-                <ul class="mobile-menu__list list">
-                    <li class="mobile-menu__item"><a href="#" class="btn mobile-menu__item-btn" data-text="about">About</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="btn mobile-menu__item-btn"  data-text="team">Team</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="btn mobile-menu__item-btn"  data-text="contact">Contact</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="btn mobile-menu__item-btn" data-text="home">Home</a></li>
-                </ul>
-            </div>
+      <div class="mobile-menu__container">
+        <button
+          id="close-mobile-menu"
+          class="mobile-menu__close-btn btn"
+          type="button"
+        ></button>
+        <div class="mobile-menu__content">
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="#" class="btn mobile-menu__item-btn" data-text="about"
+                >About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="btn mobile-menu__item-btn" data-text="team"
+                >Team</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="btn mobile-menu__item-btn" data-text="contact"
+                >Contact</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="btn mobile-menu__item-btn" data-text="home"
+                >Home</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
     <script src="./js/index.js" type="module"></script>
-</body>
+  </body>
 </html>

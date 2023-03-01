@@ -314,8 +314,20 @@ body {
 }
 
 .footer {
+  padding-top: 10px;
   background-color: #363636;
   min-height: 30px;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-item {
+  cursor: pointer;
+}
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .btn {
